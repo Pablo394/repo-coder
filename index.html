@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS -->
+ <link rel="stylesheet" href="style.css">
+
+
+ <!-- Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Este es un parrafo dentro de un div</p>
+        <span>Este es un parrafo dentro de un div</span>
+    </div>
+
+    <h1 class="titulos">Mi primer sitio web en codigo</h1>
+    <p>Este es un parrafo de ejemplo</p>
+
+    <h2 class="titulos">Sutitulo</h2>
+
+   
+    <img src="" alt="">
+
+
+    <!--Esta  lista ordenada ordenada es el paso a paso de la forma de cocinar nuestra cena-->
+
+<ol>
+    <li>Batir</li>
+    <li>Cocinar</li>
+    <li>Comer</li>
+</ol>
+
+<ul>
+    <li>Agua</li>
+    <li>Carne</li>
+    <li>Vedura</li>
+</ul>
+
+<!--Enlace absoluto: Es el que apunta a un recurso externo-->
+
+<a href="https://google.com">Prensa</a>
+
+
+<!--Enlaces relativos: Nos ayudan a movernos entre paginas dentro de nuestro projecto-->
+
+<a href="servicios.html">Ver servicios</a>
+
+
+<!--Enlaces internos: Me lleva a una seccion especifica de la pagina. El id se crea con # segido con el nombre de la seccion -->
+
+<a href="#testimonios">Testimonios</a>
+
+<section id="testimonios">
+    Testimonios
+</section>
+
+<!--Video-->
+
+<video src="video.mp4"controls></video>
+
+<audio src="audio.mp3"controls></audio>
+
+<!--Tablas/Para organizarnos o para mandar emails-->
+
+<table><!--Contenedoras de la tabla-->
+
+    <th>Nombre</th><!--Los encabezados-->
+    <th>Ciudad</th>
+    <th>Edad</th>
+
+    <tr><!--Definen una filas-->
+        <td>Nico</td><!--Las celdas-->
+        <td>Buenos Aires</td>
+        <td>34</td>
+    </tr>
+
+</table>
+
+<!--Formularios-->
+<form action="/submit" method="post"><!--Etiqueta contenedora-->
+    <!--Estos dos atributos hacen que el formulario funcione. El atrbuto "action" definimos la URL a donde se va a enviar el formulario, cuando hagamos clik en enviar esto va a redireccionar la URL que puede ser en "submit"o mas avanzado como una URL que nos permita crear el servidor donde queremos guardar la data de este formulario. Y tambien el metodo de envio, como vamos a hacer para enviar la informacion a esta direccion y hay varios metodos pero el mas conocido puede ser el "post" y el "get".-->
+
+    <label for="">Nombre</label>           <!--El "name" por ahora solo sirve para conectarlo con la parte del "submit"-->
+    <input type="text" name="nombre" id="nombre"><!--EL "id" tiene que coincidir con el "for" tiene que ver con la data, visualmente no va a pasar nada. Tiene que ver con la vinculacion de un "label" con un "input"-->
+
+    <label for="">Contraseña</label>.
+    <input type="password" name="password" id="password">
+
+    <label for="messaje">Mensaje</label>
+    <textarea name="mensaje" id="mensaje"></textarea>
+
+    <label for="genero">Genero:</label>
+    <input type="radio" name="" id="">
+    <label for="hombre">Hombre</label>
+
+    <input type="radio" name="" id="">
+    <label for="mujer">Mujer</label>
+
+    <input type="radio" name="" id="">
+    <label for="">Prefiero no decirlo</label>
+
+    <label for="suscribe">Suscribirse</label>
+    <input type="checkbox" name="" id="">
+
+    <label for="pais">País</label>
+    <select name="" id="">
+        <option value="">Argentina</option>
+        <option value="">Brasil</option>
+        <option value="">Uruguay</option>
+    </select>
+    
+    <input type="submit" value="Enviar">
+
+</form>
+
+
+
+    
+</body>
+</html>

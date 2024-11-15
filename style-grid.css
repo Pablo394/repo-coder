@@ -1,0 +1,89 @@
+
+/*Grid.html*/
+    
+.grid-container{
+    display: grid; /*Definimos grid*/
+    grid-template-columns: repeat(4, 1fr) ; /*Defenir columnas // Unidad de medida de fraccion 1fr //repeat(*)*/
+    gap: 5px;
+    grid-template-rows: 100px 200px;
+}
+
+.grid-item{
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.grid-container-padre{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-template-rows: 100px 100px ;
+}
+
+.header{
+    background-color: chocolate;
+    border: 3cap solid;
+    text-align: center;
+    padding: 30px;
+    width: 322px;
+    
+}
+
+.nav{
+    background-color: chocolate;
+    border: 3px solid;
+    text-align: center;
+    padding: 30px;
+    height: 50px;
+}
+
+.main{
+    background-color: chocolate;
+    border: 27px solid green;
+    text-align: center;
+    padding: 30px;
+}
+
+.aside{
+    background-color: coral;
+    border: 2px solid saddlebrown;
+    text-align: center;
+    padding: 40px;
+}
+
+.footer{
+    background-color: darkred;
+    border: 2px solid;
+    text-align: start;
+    padding: 30px;
+}
+
+/*Media query*/
+@media (max-width: 576px) {
+    .custom-style{background-color: red;}
+}
+
+@media (min-width: 577px) and (max-width:768px) {
+    .custom-style{
+        background-color: blue;
+    }
+}
+
+@media (min-width: 769px) {
+    .custom-style{
+        background-color: green;
+    }
+}
+
+
+
+
+
+
+
+
+
